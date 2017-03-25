@@ -152,3 +152,6 @@ nav {
 /* Read-only pages*/
 
 		
+img.bottom-margin {
+	margin-bottom: 1em;
+}
