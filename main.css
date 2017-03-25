@@ -60,13 +60,7 @@ small {
 	
 }
 
-div.transbox   {
-  margin: 30px;
-  background-color: #ffffff;
-  opacity: 0.9;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-  text-align: right;   
-}
+
 
 #jbtext	{
 	text-align: right;
@@ -75,24 +69,11 @@ div.transbox   {
   	font-family: 'Monoton';
   	font-size: 10vw;
   	position: absolute;
- 	left: 1px;
+ 	right: 1px;
  	top: 1px;
 }
-div.tranhtml rsbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-}
 
-/*	still experimenting
-#p.explain	{
-	color: #FFFFFF;
-	margin: 100px;
-	padding: 100px;
-}	
-	*/
 
-/*navbar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -111,12 +92,6 @@ li a {
     text-decoration: none;
 }
 
-/*content with bootstrap*/
-/* .row {
-	margin-right:200px;
-	margin-left: 200px; 
-
-} */
 
 #titlepage {
 	margin-right: 0px;
