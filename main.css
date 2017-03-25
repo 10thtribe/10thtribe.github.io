@@ -73,7 +73,7 @@ div.transbox   {
 	color: white;
 	margin: 5%;
   	font-family: 'Monoton';
-  	font-size: 200px;
+  	font-size: 10vw;
   	position: absolute;
  	left: 1px;
  	top: 1px;
@@ -112,12 +112,11 @@ li a {
 }
 
 /*content with bootstrap*/
-.row {
-	/*old margins*/
-	 margin-right:200px;
+/* .row {
+	margin-right:200px;
 	margin-left: 200px; 
 
-}
+} */
 
 #titlepage {
 	margin-right: 0px;
