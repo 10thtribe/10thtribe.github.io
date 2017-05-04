@@ -35,6 +35,29 @@ p {
 	font-size: 14px;
 }
 
+h1.blogtitle {
+	font-family: 'Codystar';
+	color:#FFFFFF;
+	font-size: 60px;
+}
+
+h4.blogtitleds	{
+	;
+}
+
+h1.blogsubtitle	{
+	font-family: 'Playfair Display';
+	font-size: 27px;
+	font-style: italic;
+	/*font-style: bold; 
+	font-weight: 500; */
+}
+
+h4.blogsubds	{
+	font-style: 'Playfair Display';
+	font-style: normal;
+}
+
 article {
 	font-family: 'Roboto', sans-serif;
 	text-align: justify;
@@ -46,11 +69,49 @@ small {
 	font-style: italic;
 }
 
+.detail {
+	color: white;
+}
+
+ul.a {
+	list-style-type: circle;
+}
+
+figcaption {
+	font-family: 'Playfair Display';
+}
+
+hr	{
+	color: #330000;
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a:link {
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+
+#titlepage {
+	margin-right: 0px;
+	margin-left: -15px;
+}
+
 #type {
 	font-family: 'Roboto,' sans-serif;
 }
 
 /*jumbotron contents*/
+
 .jumbotron {
 	background-color: #FFFFFF;
 	min-height: 25vmin;
@@ -64,52 +125,76 @@ small {
   	font-family: 'Monoton';
   	text-shadow: 2px 2px 8px #300;
   	font-size: 16vw;
-
 }
 
 .jbtoplevel	{
 	text-align: right;
-	color: white;
-	margin: 5%;
-
+	color: white;	margin: 5%;
   	position: absolute;
  	right: 1px;
  	top: 1px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    position: fixed;
+/*  Navbar */
+.menu {
+	background-color: rgba(205,185,156,0.5);
+	padding: 15px;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.sidenav {
     height: 100%;
-    overflow: auto;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #CDB99C;
+    font-family: 'Playfair Display'; 
+    font-style: italic;
+    font color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
 }
 
-li a {
-    display: block;
-    color: #FFFFFF;
-    background-color: #330000
-    width: 60px;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-#titlepage {
-	margin-right: 0px;
-	margin-left: -15px;
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
 
-hr	{
-	color: #330000;
-	display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-/*content with bootstrap*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.ftimg	{
+	float: right;
+}
+
+/*Bootstrap Content*/
 nav {
       background-color: #f2f2f2;
       height: 25px;
@@ -118,12 +203,13 @@ nav {
       background-color: #ffffff;
      
     }
-/*footer*/   
+/*footer  
 
 #ftimg	{
 	text-align: right;
 }
 
+*/ 
 /* Read-only pages*/
 		
 img.bottom-margin {
