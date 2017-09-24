@@ -8,9 +8,9 @@ Burnt Orange:  #C84127 !can't carry blue as text
 Brown #330000 ! accent only */ 	
 
 
-body {background-color: #CDB99C;}
+body {background-color: #FFFFFF;}
 
-h1		{font-family: 'Codystar';}
+h1	{font-family: 'Codystar';}
 
 h2	{font-family: 'Monoton';}
 
@@ -18,32 +18,34 @@ h3 {font-family: 'Lobster';}
 
 h4 {
 		font-family: 'Playfair Display';
-		font-weight: 400;
-		font-style: italic;
+		font-weight: 600;
+		font-size: small;
+		color: black;
+
 }
 
 p {font-family: 'Lobster'; font-size: 20px;}
 
 h1.blogtitle {
 		font-family: 'Codystar';
-	 color:#FFFFFF;
-	 font-size: 60px;
+		color: #CDB99C; /* #3399CC; */
+	 	font-size: 60px;
 }
-
-/*h4.blogtitleds	{
-	;
-} */
 
 h1.blogsubtitle {
 		font-family: 'Playfair Display';
 		font-size: 27px;
 		font-style: italic;
+		color: #3399CC;
+		
 }
 
-h4.blogsubds {
+/* h4.blogsubds {
 		font-style: 'Playfair Display';
-		font-style: normal;
+		font-style: normal; */
+
 }
+
 
 iframe {
 		opacity: 0.5;
@@ -54,7 +56,8 @@ iframe {
 article {
 		font-family: 'Roboto', sans-serif;
 		text-align: justify;
-		font-size: 16px;
+		font-size: 14px;
+
 }
 
 article.gombaseind {font-size: 14px;}
@@ -74,18 +77,31 @@ figcaption {font-family: 'Playfair Display';}
 border-top-right-radius: {
 		color: #330000;
 		display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
+ 		margin-top: 0.5em;
+  		margin-bottom: 0.5em;
+  		margin-left: auto;
+  		margin-right: auto;
 }
 
 /*Links*/
-a:link {color: black;}
+a:link {
+	color: black;
+	/* text-decoration: underline;
+	text-decoration-color: black; */
+}
+
+a.linkclass2 {
+	color: #CDB99C;
+	text-decoration: underline;
+	text-decoration-color: #3399CC; 
+
+}
+
 
 a:visited {
 		text-decoration: underline;
-		text-decoration-color:#C84127;
+		text-decoration-color:  #C84127;
+		/* text-decoration-color: #330000; */
 }
 
 a:hover {
@@ -110,23 +126,25 @@ p.indshort {line-height: 400%;}
 }
 
 #jbtitle {
-		font-family: 'Monoton';
+	font-family: 'Monoton';
   text-shadow: 2px 2px 8px #300;
   font-size: 16vw;
 }
 
 .jbtoplevel {
 		text-align: right;
-		color: white;	margin: 5%;
-  position: absolute;
- 	right: 1px;
- 	top: 1px;
+		color: white;	
+		margin: 5%;
+  		position: absolute;
+ 		right: 1px;
+ 		top: 1px;
 }
 
 /*Temporary Features Styling*/
 
-.tempnav {
+.tempnavtxt {
 		color: #C84127;
+
 }
 /* Navbar */
 .menu {
@@ -141,38 +159,38 @@ p.indshort {line-height: 400%;}
 }
 
 .sidenav {
-		height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #CDB99C;
-  font-family: 'Playfair Display'; 
-  font-style: italic;
-  font color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 70px;
+  		height: 100%;
+  		width: 0;
+  		position: fixed;
+  		z-index: 1;
+  		top: 0;
+  		left: 0;
+  		background-color: #CDB99C;
+  		font-family: 'Playfair Display'; 
+  		font-style: italic;
+  		font color: black;
+  		overflow-x: hidden;
+  		transition: 0.5s;
+  		padding-top: 70px;
 }
 
 .sidenav a {
-		padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  		padding: 8px 8px 8px 32px;
+ 	 	text-decoration: none;
+  		font-size: 25px;
+  		color: #818181;
+  		display: block;
+  		transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus{color: #f1f1f1;}
 
 .sidenav .closebtn {
-		position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  		position: absolute;
+  		top: 0;
+  		right: 25px;
+  		font-size: 36px;
+  		margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
@@ -197,9 +215,9 @@ a.bug {
 
 /*Bootstrap Content*/
 nav {
-		background-color: #f2f2f2;
-  height: 25px;
-  padding: 0px;
-		margin-right: -15px;
-		background-color: #ffffff;
+  	background-color: #f2f2f2;
+ 	height: 25px;
+ 	padding: 0px;
+  	margin-right: -15px;
+  	background-color: #ffffff;
 }
